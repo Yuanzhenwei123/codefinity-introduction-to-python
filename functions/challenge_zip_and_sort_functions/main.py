@@ -1,0 +1,16 @@
+# List of product names
+products = ["Banana", "Apple", "Mango", "Cherry"]
+
+# List of product prices
+prices = [1.20, 0.50, 2.50, 1.75]
+
+# List of quantity sold
+quantities_sold = [50, 100, 25, 40]
+
+combined_list = list(zip(products,prices,quantities_sold))
+print(combined_list)
+sorted_products = sorted(combined_list)
+print(sorted_products)
+for sorted_product in sorted_products:
+    product_name,Price,Quantity_Sold = sorted_product
+    print(f"Product: {product_name}, Price: {Price}, Quantity Sold: {Quantity_Sold}")
